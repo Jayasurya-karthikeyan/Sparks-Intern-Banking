@@ -76,6 +76,7 @@ if(isset($_POST['submit']))
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="bank.png" type="image/icon type">
     <title>Transfer</title>
 </head>
 <style>
@@ -108,9 +109,9 @@ body{
     background-color:#262d2d;
     font-weight:bold;
     margin:0px 4px 0px 4px;
-    text-shadow: 0px 1px 30px black;
+    text-shadow: 0px 0px 6px #565c5f;
     border:4px solid white;
-    box-shadow: -3px 1px 15px black;
+    box-shadow: 0px 0px 10px #565c5f;
     font-family: monospace;
     border-radius:20px;
 }
@@ -155,8 +156,7 @@ hr{
     border: 1px solid #ffffff;
     border-radius:2px;
     background-color:white; 
-    box-shadow: -3px 1px 5px black;
-}
+    box-shadow: 0px 0px 5px #565c5f;
 
 </style>
 <body>
@@ -176,7 +176,7 @@ include 'navbar.php' ?><br>
                 $row=mysqli_fetch_assoc($result);
             ?>
 <form method="post" name="tcredit" class="tabletext" ><br>
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Personal Details -> <?php echo $row['Name'] ?>
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Personal Details -> <?php echo $row['Name'] ?>
     <hr style="hr"></h1></center> <br> <br>
 
 
@@ -216,9 +216,9 @@ include 'navbar.php' ?><br>
 </div> 
 <br><br><br><center>
 <div class="container">
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Transfer Money <hr style="hr"></h1></center><br><br>
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;;"> Transfer Money <hr style="hr"></h1></center><br><br>
                 <div class="form-group"><center>
-        <label class="col-sm-2 control-label" style="color:#ffffff;font-weight:bold;font-size:20px;">Recepient</label></center>
+        <label class="col-sm-3 control-label" style="color:#ffffff;font-weight:bold;font-size:20px;">Recepient</label></center>
         <div class="col-sm-7">
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
@@ -246,7 +246,7 @@ include 'navbar.php' ?><br>
         </select>
         </div>
         </div>
-        <label class="col-sm-2 control-label"  style="color:#ffffff;font-weight:bold;padding-bottom:13px;font-size:20px;">Amount</label>
+        <label class="col-sm-3 control-label"  style="color:#ffffff;font-weight:bold;padding-bottom:13px;font-size:20px;">Amount</label>
 					<div class="col-sm-7" style=" margin-top:-15px;">
 						<input type="number" name="amount1" class="form-control" placeholder="Enter the Amount" >
 					</div>
@@ -256,7 +256,7 @@ include 'navbar.php' ?><br>
   </div>
   </div> <br><br><br><br><br></center>
 
-  <center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Sent Transactions -> <?php $send = $_GET['id']; 
+  <center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Sent Transactions -> <?php $send = $_GET['id']; 
     $row = mysqli_fetch_array(mysqli_query($con,"SELECT * from customers where id=$send")); $s=$row['Name']; echo $s; ?>
     <hr style="hr"></h1></center> <br> 
 <div class="containersss">
@@ -294,7 +294,7 @@ include 'navbar.php' ?><br>
 ?>
 </table>
 </div><br><br>
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Received Transactions -> <?php $send = $_GET['id'];
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Received Transactions -> <?php $send = $_GET['id'];
     $row = mysqli_fetch_array(mysqli_query($con,"SELECT * from customers where id=$send")); $s=$row['Name']; echo $s; ?> 
     <hr style="hr"></h1></center> <br>
 <div class="containersss">

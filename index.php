@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Home</title>
+    <link rel="icon" href="bank.png" type="image/icon type">
 </head>
 <style>
 body{
@@ -36,7 +37,7 @@ body{
     font-size:50px ; 
     font-weight:bold;
     letter-spacing: 2px;
-    text-shadow: 0px 2px 1px black;
+    text-shadow: 0px 0px 15px #565c5f;
 }
 .title:hover{
     font-size:51px ; 
@@ -50,7 +51,7 @@ body{
     padding: 15px;
     font-weight:bold;
     border:6px solid #ffffff;
-    box-shadow: -3px 1px 15px black;
+    box-shadow: 0px 0px 10px #565c5f;
     font-family: monospace;
     border-radius:20px;
 }
@@ -68,7 +69,7 @@ hr{
     border: 1px solid #ffffff;
     border-radius:2px;
     background-color:white; 
-    box-shadow: -3px 1px 5px black;
+    box-shadow: 0px 0px 5px #565c5f;
 }
 a, a:hover{
     text-decoration:none;

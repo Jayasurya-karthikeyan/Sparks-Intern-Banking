@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="bank.png" type="image/icon type">
     <title>Customers</title>
 </head>
 <style>
@@ -60,7 +61,7 @@ hr{
     border: 1px solid #ffffff;
     border-radius:2px;
     background-color:white; 
-    box-shadow: -3px 1px 5px black;
+    box-shadow: 0px 0px 10px #565c5f;
 
 }
 </style>
@@ -68,7 +69,7 @@ hr{
 <?php
 include 'navbar.php' ?><br>
 
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Customers List </h1><hr style="hr"></center> <br><br>
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Customers List </h1><hr style="hr"></center> <br><br>
 <div class="containersss">
 <table class="table">
 <tr>

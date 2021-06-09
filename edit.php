@@ -43,6 +43,7 @@ if(isset($_POST['edit']))
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="bank.png" type="image/icon type">
     <title>Edit Details</title>
 </head>
 <style>
@@ -93,7 +94,7 @@ hr{
     border: 1px solid #ffffff;
     border-radius:2px;
     background-color:white; 
-    box-shadow: -3px 1px 5px black;
+    box-shadow: 0px 0px 10px #565c5f;
 }
 
 a, a:hover{
@@ -114,7 +115,7 @@ a, a:hover{
             ?>
 <?php
 include 'navbar.php' ?><br>
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Edit Details of <?php echo $row['Name'] ?><hr style="hr"></h1></center><br><br><center>
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Edit Details of <?php echo $row['Name'] ?><hr style="hr"></h1></center><br><br><center>
 <form method="post" name="tcredit" class="tabletext" >
     <div class="form-group">
         <label class="col-sm-3 control-label">Name</label>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="bank.png" type="image/icon type">
     <title>Transfer history</title>
 </head>
 <style>
@@ -35,26 +36,6 @@ body{
     font-size:35px ; 
     font-weight:bold;
 }
-.button{
-    color:#ffff00;
-    font-size:30px;
-    padding: 15px;
-    font-weight:bold;
-    text-shadow: 0px 1px 30px black;
-    border:6px solid #ffff00;
-    box-shadow: -3px 1px 15px black;
-    font-family: monospace;
-    border-radius:20px;
-}
-.button:hover{
-    color:#ffff00;
-    background-color:#6C89F7;
-    border:4px solid #6C89F7 ;
-    font-size:29.5px ;
-    margin:4px;
-    transition :ease-in-out;
-
-}
 tr{
     color:white;
 }
@@ -70,7 +51,7 @@ hr{
     border: 1px solid #ffffff;
     border-radius:2px;
     background-color:white; 
-    box-shadow: -3px 1px 5px black;
+    box-shadow: 0px 0px 10px #565c5f;
 
 }
 .containersss{
@@ -84,7 +65,7 @@ a:hover{
 
 <?php
 include 'navbar.php' ?><br>
-<center><h1 style="color:#ffffff;text-shadow: -3px 1px 15px black;"> Transaction History </h1><hr style="hr"></center> <br><br>
+<center><h1 style="color:#ffffff;text-shadow: 0px 0px 10px #565c5f;"> Transaction History </h1><hr style="hr"></center> <br><br>
 <div class="containersss">
 <table class="table ">
 <tr>
